@@ -8,10 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
 
 	<script src="./js/jquery-2.1.0.min.js"></script>
@@ -36,22 +36,14 @@
 		<div class="bloc bgc-white l-bloc headercontact" id="bloc-0">
 			<div class="container bloc-sm">
 				<nav class="navbar row">
-					<div class="navbar-header">
+					<div class="navbar-header img-logo">
 						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
 								alt="Logo de l'agence de web design La panthère" height="40" /></a>
-
 					</div>
-					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-						<ul class="site-navigation nav navbar-nav">
-							<li class="Accueil">
-								<a href="index.html">Accueil</a>
-							</li>
-							<li>
-							</li>
-							<li>
-								<a href="Contact.html">Contact &gt;</a>
-							</li>
-						</ul>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav contact-nav">
+						<div class="Accueil site-navigation">
+							<a href="index.html">Accueil</a>
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -60,13 +52,13 @@
 
 		<!-- bloc-6 -->
 		<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-			<div class="container bloc-lg">
+			<div class="container bloc-lg contact-form flex-center">
 				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="text-center hero-bloc-text tc-white">
+					<div class="col-sm-12 title-contact">
+						<h1 class="text-center hero-bloc-text tc-white h1-contact">
 							Parlons web design !
 						</h1>
-						<p class="text-center mg-lg tc-white tight-width-whitespace">
+						<p class="subtitle-contact text-center mg-lg tc-white tight-width-whitespace ">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 						</p>
@@ -81,33 +73,34 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-							<div class="form-group">
+						<form id="form_1" novalidate data-success-msg="Your message has been sent."
+							data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+							class="formulaire-container">
+							<div class="form-group name-form">
 								<label>
 									Nom
 								</label>
-								<input name="Nom" type="Nom" placeholder="Votre nom" class="form-control" required />
+								<input type="text" placeholder="Votre nom" class="form-control" required />
 							</div>
-							<div class="form-group">
+							<div class="form-group email-form">
 								<label>
 									Adresse email
 								</label>
-								<input name="email" type="email" placeholder="Votre email" class="form-control" type="email"
-									required />
+								<input type="email" placeholder="Votre email" class="form-control" required />
 							</div>
 							<div class="form-group">
 								<label>
 									Comment nous avez-vous connu ?
 								</label>
-								<input name="Comment nous avez-vous connu?" placeholder="Comment avez-vous connu notre agence?"  class="form-control" type="email" required
-									id="input_504" />
+								<input name="Comment nous avez-vous connu?"
+									placeholder="Comment avez-vous connu notre agence?"
+									class="form-control knowing-panthère" required id="input_504" />
 							</div>
 							<div class="form-group">
 								<label>
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" placeholder="Partagez-nous les détails de votre projet" class="form-control" rows="4" cols="50"
-									required></textarea>
+								</label><textarea id="message" placeholder="Partagez-nous les détails de votre projet"
+									class="form-control projet-panthère" rows="4" cols="50" required></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
@@ -136,42 +129,45 @@
 		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-14 padding-footer">
 						<p class="text-center white">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
-						<div class="row row-no-gutters social">
+						<div class="flex-center">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"
+											aria-label="Icone twitter"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"
+											aria-label="Icone facebook"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"
+											aria-label="Icone dribbble"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span
-											class="fa fa-instagram icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-instagram icon-md"
+											aria-label="Icone instagram"></span></a>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Footer - bloc-8 END -->
+
 		</div>
-		<!-- Footer - bloc-8 END -->
-
+		<!-- Principal conteneur END -->
 	</div>
-	<!-- Principal conteneur END -->
-
 
 </body>
 
