@@ -5,10 +5,9 @@
 </p>
 
 __GitHub: @Pierregarnr__      
-__LinkedIn: @Pierre Garnier__    
+__LinkedIn: [@Pierre Garnier](https://www.linkedin.com/in/pierre-garnier-50650824b/)__    
 Projet 4 - Optimisez un site web existant
-Créer des interfaces dynamiques
-Le site hébergé sur GitHub : Kanap
+
 
 Améliorer le référencement et l'accessibilité d'un site web existant
 Compétences évaluées
